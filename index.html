@@ -1,0 +1,34 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <script src="audioprocessor.js"></script>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <title>Talking Woerny</title>
+    <body>
+        <h1>Talking Woerny</h1>
+        <img src="woernyidle.png" id="woerny">
+        <p id="console" style="display: none;"></p>
+
+        <script>
+            var audio = new Audio();
+            function change(){
+                var audios = ["undeini.mp3", "waziwazi.mp3", "ifixedit.mp3", "einido.mp3"]
+                var rand = "audios/" + audios[(Math.random() * audios.length) | 0]
+                audio.src = rand;
+                var i = 0;
+                audio.play();
+                delete audio;
+            }
+            document.addEventListener("DOMContentLoaded", function(){
+                var states = ["woernytalk.jpg", "woernyidle.png"]
+                var i = 0;
+                setInterval(function(){
+                    console.log("Sose")
+                    if(!audio.paused){
+                        document.getElementById("woerny").src = states[i % 2]
+                    }
+                    i += 1
+                }, 250);
+            })
+        </script>
+    </body>
+</html>
