@@ -52,5 +52,5 @@ navigator.mediaDevices.getUserMedia({
       };
     })
     .catch(function(err) {
-      alert("Audio Device couldn't be loaded! Get another browser or allow me access.")
+      //alert("Audio Device couldn't be loaded! Get another browser or allow me access.")
     });
