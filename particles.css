@@ -1,0 +1,61 @@
+@-webkit-keyframes fallen_1 {
+    100% {
+      top: calc(100% + 20px);
+      transform: rotateX(-405deg) rotateY(411deg) rotateZ(-1010deg);
+    }
+  }
+  
+  @keyframes fallen_1 {
+    100% {
+      top: calc(100% + 20px);
+      transform: rotateX(-405deg) rotateY(411deg) rotateZ(-1010deg);
+    }
+  }
+  @-webkit-keyframes fallen_2 {
+    100% {
+      top: calc(100% + 20px);
+      transform: rotateX(-600deg) rotateY(1164deg) rotateZ(-686deg);
+    }
+  }
+  @keyframes fallen_2 {
+    100% {
+      top: calc(100% + 20px);
+      transform: rotateX(-600deg) rotateY(1164deg) rotateZ(-686deg);
+    }
+  }
+  @-webkit-keyframes fallen_3 {
+    100% {
+      top: calc(100% + 20px);
+      transform: rotateX(1095deg) rotateY(427deg) rotateZ(-829deg);
+    }
+  }
+  @keyframes fallen_3 {
+    100% {
+      top: calc(100% + 20px);
+      transform: rotateX(1095deg) rotateY(427deg) rotateZ(-829deg);
+    }
+  }
+  @-webkit-keyframes fallen_4 {
+    100% {
+      top: calc(100% + 20px);
+      transform: rotateX(-1298deg) rotateY(-633deg) rotateZ(1269deg);
+    }
+  }
+  @keyframes fallen_4 {
+    100% {
+      top: calc(100% + 20px);
+      transform: rotateX(-1298deg) rotateY(-633deg) rotateZ(1269deg);
+    }
+  }
+  @-webkit-keyframes fallen_5 {
+    100% {
+      top: calc(100% + 20px);
+      transform: rotateX(1332deg) rotateY(1042deg) rotateZ(1065deg);
+    }
+  }
+  @keyframes fallen_5 {
+    100% {
+      top: calc(100% + 20px);
+      transform: rotateX(1332deg) rotateY(1042deg) rotateZ(1065deg);
+    }
+  }

@@ -29,7 +29,7 @@ navigator.mediaDevices.getUserMedia({
         const arraySum = array.reduce((a, value) => a + value, 0);
         const average = arraySum / array.length;
         //console.log(average);
-        stop_loader()
+        stop_loader();
         if (Math.round(average) < 15){
             if (talking){
               talking = false;
