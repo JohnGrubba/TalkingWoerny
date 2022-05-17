@@ -3,10 +3,25 @@
     <script src="audioprocessor.js"></script>
     <link rel="icon" type="image/x-icon" href="icon.png">
     <title>Talking Woerny</title>
+    <script>
+        //Loading Functions
+        function stop_loader(){
+            document.getElementById("content").style.display = "block";
+            document.getElementById("load").style.display = "none";
+        }
+    </script>
     <body>
-        <h1>Talking Woerny</h1>
-        <img src="woernyidle.png" id="woerny">
-        <p id="console" style="display: none;"></p>
+        <div id="content" style="display: none;">
+            <h1>Talking Woerny</h1>
+            <img src="woernyidle.png" id="woerny">
+            <p id="console" style="display: none;"></p>
+        </div>
+        <div id="load">
+            <div class="loader1"><h1>Loading</h1></div>
+            <div class="loader">
+                <img src="icon.png" style="border-radius: 50%;">
+            </div>
+        </div>
 
         <script>
             var audio = new Audio();

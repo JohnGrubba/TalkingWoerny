@@ -29,6 +29,7 @@ navigator.mediaDevices.getUserMedia({
         const arraySum = array.reduce((a, value) => a + value, 0);
         const average = arraySum / array.length;
         //console.log(average);
+        stop_loader()
         console.log(high);
         if (average > high+20){
           high = average;
@@ -51,5 +52,5 @@ navigator.mediaDevices.getUserMedia({
       };
     })
     .catch(function(err) {
-      //alert("Audio Device couldn't be loaded! U gay")
+      alert("Audio Device couldn't be loaded! Get another browser or allow me access.")
     });

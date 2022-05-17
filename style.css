@@ -7,6 +7,7 @@ body{
 }
 h1{
     font-size: 10vh;
+    text-align: center;
 }
 img{
     height: 50vh;
@@ -19,4 +20,25 @@ html{
     height: 100%;
     width: 100%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,37,37,1) 67%);
+    overflow: hidden;
+}
+
+@keyframes rotation {
+    0% {
+      transform: rotate(-25deg);
+    }
+    50% {
+      transform: rotate(25deg);
+    }
+    100%{
+        transform: rotate(-25deg);
+    }
+  }
+.loader{
+    margin-top: 20vh;
+    animation: rotation 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+.loader1{
+    margin-top: 10vh;
+    animation: rotation 3s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
 }
