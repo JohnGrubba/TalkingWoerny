@@ -30,20 +30,13 @@ navigator.mediaDevices.getUserMedia({
         const average = arraySum / array.length;
         //console.log(average);
         stop_loader()
-        console.log(high);
-        if (average > high+20){
-          high = average;
-        }
-        if (average < low-20){
-          low = average;
-        }
-        if (Math.round(average) < low + 20){
+        if (Math.round(average) < 15){
             if (talking){
               talking = false;
               change();
             }
         }
-        if (Math.round(average) > high - 20){
+        if (Math.round(average) > 30){
             if (!talking){
               talking = true;
               document.getElementById("woerny").src = "woernylistening.png"
