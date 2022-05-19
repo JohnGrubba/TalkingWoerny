@@ -1,5 +1,6 @@
 <html>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="particles.css">
     <script src="audioprocessor.js"></script>
     <link rel="icon" type="image/x-icon" href="icon.png">
     <title>Talking Woerny</title>
@@ -14,9 +15,18 @@
     <!-- Include this to make the og:image larger -->
     <meta name="twitter:card" content="summary_large_image">
     <body>
-        <h1>Talking Woerny</h1>
-        <img src="woernyidle.png" id="woerny">
-        <p id="console" style="display: none;"></p>
+        <div id="content" style="display: none;">
+            <h1>Talking Woerny</h1>
+            <img src="woernyidle.png" id="woerny">
+            <p id="console" style="display: none;"></p>
+        </div>
+        <div id="load">
+            <div id="particle"></div>
+            <div class="loader1"><h1>Loading</h1></div>
+            <div class="loader">
+                <img src="icon.png" style="border-radius: 50%;">
+            </div>
+        </div>
 
         <script>
             var audio = new Audio();
@@ -40,5 +50,7 @@
                 }, 250);
             })
         </script>
+
+        <script src="party.js"></script>
     </body>
 </html>

@@ -29,20 +29,14 @@ navigator.mediaDevices.getUserMedia({
         const arraySum = array.reduce((a, value) => a + value, 0);
         const average = arraySum / array.length;
         //console.log(average);
-        console.log(high);
-        if (average > high+20){
-          high = average;
-        }
-        if (average < low-20){
-          low = average;
-        }
-        if (Math.round(average) < low + 20){
+        stop_loader();
+        if (Math.round(average) < 15){
             if (talking){
               talking = false;
               change();
             }
         }
-        if (Math.round(average) > high - 20){
+        if (Math.round(average) > 30){
             if (!talking){
               talking = true;
               document.getElementById("woerny").src = "woernylistening.png"
@@ -51,5 +45,5 @@ navigator.mediaDevices.getUserMedia({
       };
     })
     .catch(function(err) {
-      //alert("Audio Device couldn't be loaded! U gay")
+      //alert("Audio Device couldn't be loaded! Get another browser or allow me access.")
     });
