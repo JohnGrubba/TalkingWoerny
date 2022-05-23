@@ -29,6 +29,10 @@
         </div>
 
         <script>
+            function stop_loader(){
+                document.getElementById("content").style.display = "block";
+                document.getElementById("load").style.display = "none";
+            }
             var audio = new Audio();
             function change(){
                 var audios = ["undeini.mp3", "waziwazi.mp3", "ifixedit.mp3", "einido.mp3"]
