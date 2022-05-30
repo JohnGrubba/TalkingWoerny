@@ -44,6 +44,7 @@
             function change(){
                 var audios = ["undeini.mp3", "waziwazi.mp3", "ifixedit.mp3", "einido.mp3", "Yes.mp3", "No.mp3"]
                 var yes_no = ["Yes.mp3", "No.mp3"]
+                alert(document.getElementById("toggle").checked);
                 if (document.getElementById("toggle").checked){
                     var rand = "audios/" + audios[(Math.random() * audios.length) | 0]
                 }
