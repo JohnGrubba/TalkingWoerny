@@ -1,6 +1,7 @@
 <html>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="particles.css">
+    <link rel="stylesheet" href="shift.css">
     <script src="audioprocessor.js"></script>
     <link rel="icon" type="image/x-icon" href="icon.png">
     <title>Talking Woerny</title>
@@ -16,6 +17,12 @@
             <h1>Talking Woerny</h1>
             <img src="woernyidle.png" id="woerny">
             <p id="console" style="display: none;"></p>
+            <div id="sosenbiner">
+                <input type="checkbox" id="toggle" class="toggle--checkbox">
+                <label for="toggle" class="toggle--label">
+                <span class="toggle--label-background"></span>
+                </label>
+            </div>
         </div>
         <div id="load">
             <div id="particle"></div>
@@ -28,7 +35,7 @@
         <script>
             var audio = new Audio();
             function change(){
-                var audios = ["undeini.mp3", "waziwazi.mp3", "ifixedit.mp3", "einido.mp3"]
+                var audios = ["undeini.mp3", "waziwazi.mp3", "ifixedit.mp3", "einido.mp3", "Yes.mp3", "No.mp3"]
                 var rand = "audios/" + audios[(Math.random() * audios.length) | 0]
                 audio.src = rand;
                 var i = 0;
@@ -46,6 +53,7 @@
                     i += 1
                 }, 250);
             })
+            stop_loader()
         </script>
 
         <script src="party.js"></script>
