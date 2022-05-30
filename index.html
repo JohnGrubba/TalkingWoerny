@@ -5,13 +5,16 @@
     <script src="audioprocessor.js"></script>
     <link rel="icon" type="image/x-icon" href="icon.png">
     <title>Talking Woerny</title>
-    <script>
-        //Loading Functions
-        function stop_loader(){
-            document.getElementById("content").style.display = "block";
-            document.getElementById("load").style.display = "none";
-        }
-    </script>
+
+    <meta property="og:title" content="Talking Woerny" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://talkingwoerny.tk/" />
+    <meta property="og:image" content="https://talkingwoerny.tk/icon.png" />
+    <meta property="og:description" content="Talk with Woerny" />
+    <meta name="theme-color" content="#4c4d4f">
+    
+    <!-- Include this to make the og:image larger -->
+    <meta name="twitter:card" content="summary_large_image">
     <body>
         <div id="content" style="display: none;">
             <h1>Talking Woerny</h1>
@@ -33,6 +36,10 @@
         </div>
 
         <script>
+            function stop_loader(){
+                document.getElementById("content").style.display = "block";
+                document.getElementById("load").style.display = "none";
+            }
             var audio = new Audio();
             function change(){
                 var audios = ["undeini.mp3", "waziwazi.mp3", "ifixedit.mp3", "einido.mp3", "Yes.mp3", "No.mp3"]
