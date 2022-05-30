@@ -41,10 +41,10 @@ html{
     }
   }
 .loader{
-    margin-top: 20vh;
+    margin-top: 10vh;
     animation: rotation 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1)
 }
 .loader1{
     margin-top: 10vh;
-    animation: rotation 3s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: rotation 6s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
 }

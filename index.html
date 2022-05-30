@@ -30,9 +30,11 @@
         <div id="load">
             <div id="particle"></div>
             <div class="loader1"><h1>Loading</h1></div>
+            <h2>Please enable Microphone Access</h2>
             <div class="loader">
                 <img src="icon.png" style="border-radius: 50%;">
             </div>
+            
         </div>
 
         <script>
@@ -43,7 +45,7 @@
             var audio = new Audio();
             function change(){
                 var audios = ["undeini.mp3", "waziwazi.mp3", "ifixedit.mp3", "einido.mp3", "Yes.mp3", "No.mp3"]
-                var yes_no = ["Yes.mp3", "No.mp3"]
+                var yes_no = ["Yes.mp3", "No.mp3"]//soos
                 if (document.getElementById("toggle").checked){
                     var rand = "audios/" + audios[(Math.random() * audios.length) | 0]
                 }
@@ -66,7 +68,6 @@
                     i += 1
                 }, 250);
             })
-            stop_loader()
         </script>
 
         <script src="party.js"></script>
