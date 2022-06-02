@@ -21,10 +21,11 @@
             <img src="woernyidle.png" id="woerny">
             <p id="console" style="display: none;"></p>
             <div id="sosenbiner">
-                <input type="checkbox" id="toggle" class="toggle--checkbox">
+                <input type="checkbox" onclick='handleClick(this);' id="toggle" class="toggle--checkbox">
                 <label for="toggle" class="toggle--label">
                 <span class="toggle--label-background"></span>
                 </label>
+                <p id="mode">Yes / No</p>
             </div>
         </div>
         <div id="load">
@@ -38,6 +39,13 @@
         </div>
 
         <script>
+            function handleClick(){
+                if(document.getElementById("toggle").checked){
+                    document.getElementById("mode").innerHTML = "Diverse";
+                }else{
+                    document.getElementById("mode").innerHTML = "Yes / No";
+                }
+            }
             function stop_loader(){
                 document.getElementById("content").style.display = "block";
                 document.getElementById("load").style.display = "none";
